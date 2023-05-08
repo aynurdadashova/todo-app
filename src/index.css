@@ -1,13 +1,108 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+body,
+html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background: #f2f2f2;
+  height: 100vh;
+  width: 100vw;
+}
+* {
+  box-sizing: border-box;
+}
+.app {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: url("/public/assets/bg-desktop-light.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100vw 40vh;
+}
+.app button {
+  font-family: "Josefin Sans", sans-serif;
+}
+.app.dark {
+  background-image: url("/public/assets/bg-desktop-dark.jpg");
+  background-color: #171823;
+}
+.container {
+  width: 550px;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 70px;
+  left: 50%;
+  padding: 24px;
+}
+.app.dark .todoCreate_create {
+  background-color: #25273d;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  cursor: pointer;
+}
+h1 {
+  color: #fff;
+}
+.leftCount {
+  color: #9495a5;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+.formobile {
+  display: none;
+}
+.formobile-dark {
+  display: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media screen and (max-width: 550px) {
+  .container {
+    width: 100vw;
+  }
+  .fordesktop {
+    display: none;
+  }
+
+  .formobile {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 24px;
+    background-color: #fff;
+    box-shadow: 0px 2px 20px 4px rgb(194 195 214 / 50%);
+    margin-top: 16px;
+    border-radius: 5px;
+  }
+  .formobile-dark {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 24px;
+    box-shadow: 0px 2px 20px 4px rgb(0 0 0 / 50%);
+    margin-top: 16px;
+    border-radius: 5px;
+    background-color: #25273d;
+  }
+  .app {
+    background-image: url("/public/assets/bg-mobile-light.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .app.dark {
+    background-image: url("/public/assets/bg-mobile-dark.jpg");
+    background-color: #171823;
+  }
+
+  .fordesktop-dark {
+    box-shadow: 0px 2px 20px 4px rgb(0 0 0 / 50%);
+    background-color: #25273d;
+  }
 }
