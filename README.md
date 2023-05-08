@@ -1,7 +1,22 @@
-# Getting Started with Create React App
+# Todo App
+Welcome! This is a Todo app built for a coding challenge on [Frontend Mentor](https://www.frontendmentor.io)
+## This is the [Live Demo link](https://aynurdadashova.github.io/react-todo/)
+
+## Features
+
+- Create and delete todos
+- Toggle todo status and filter by status
+- Toggle between light and dark theme
+- Create multi-line todos on desktop using Shift+Enter
+- Clear all completed todos
+- Retains selected theme and todo list
+- Installable as a Progressive Web App
+
+## Screenshot
+![](./public/assets/todo.png)
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
