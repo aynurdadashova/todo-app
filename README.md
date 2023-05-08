@@ -1,6 +1,6 @@
 # Todo App
 Welcome! This is a Todo app built for a coding challenge on [Frontend Mentor](https://www.frontendmentor.io)
-## This is the [Live Demo link](https://aynurdadashova.github.io/react-todo/)
+## This is the [Live Demo link](https://aynurdadashova.github.io/todo-app/)
 
 ## Features
 
